@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bull Catalog</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/Bull select logo.png" alt="Bull Select Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bull-catalog.html">Bull Catalog</a></li>
+                <li><a href="ai-service-providers.html">AI Service Providers</a></li>
+                <li><a href="book.html">Bookings</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="catalog">
+            <h1>Bull Catalog</h1>
+            <div class="filters">
+                <label for="trait">Filter by Trait:</label>
+                <select id="trait" onchange="filterBulls()">
+                    <option value="all">All</option>
+                    <option value="milk">Milk Production</option>
+                    <option value="meat">Meat Quality</option>
+                    <option value="fertility">Fertility</option>
+                </select>
+                <label for="breed">Filter by Breed:</label>
+                <select id="breed" onchange="filterBulls()">
+                    <option value="all">All</option>
+                    <option value="holstein">Holstein</option>
+                    <option value="angus">Angus</option>
+                    <option value="jersey">Jersey</option>
+                </select>
+            </div>
+            <div class="bull-cards">
+                <!-- Bull card template -->
+                <div class="bull-card" data-trait="milk" data-breed="holstein">
+                    <img src="images/bull1.jpg" alt="Bull 1">
+                    <h2>Bull 1</h2>
+                    <p>Trait: Milk Production</p>
+                    <p>Breed: Holstein</p>
+                    <p>Details: High yield and efficiency.</p>
+                </div>
+                <div class="bull-card" data-trait="meat" data-breed="angus">
+                    <img src="images/bull2.jpg" alt="Bull 2">
+                    <h2>Bull 2</h2>
+                    <p>Trait: Meat Quality</p>
+                    <p>Breed: Angus</p>
+                    <p>Details: Excellent marbling and tenderness.</p>
+                </div>
+                <div class="bull-card" data-trait="fertility" data-breed="jersey">
+                    <img src="images/bull3.jpg" alt="Bull 3">
+                    <h2>Bull 3</h2>
+                    <p>Trait: Fertility</p>
+                    <p>Breed: Jersey</p>
+                    <p>Details: High conception rates.</p>
+                </div>
+                <div class="bull-card" data-trait="milk" data-breed="holstein">
+                    <img src="images/bull4.jpg" alt="Bull 4">
+                    <h2>Bull 4</h2>
+                    <p>Trait: Milk Production</p>
+                    <p>Breed: Holstein</p>
+                    <p>Details: High yield and efficiency.</p>
+                </div>
+                <div class="bull-card" data-trait="meat" data-breed="angus">
+                    <img src="images/bull5.jpg" alt="Bull 5">
+                    <h2>Bull 5</h2>
+                    <p>Trait: Meat Quality</p>
+                    <p>Breed: Angus</p>
+                    <p>Details: Excellent marbling and tenderness.</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

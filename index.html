@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- Source Codes By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website HTML and CSS | CodingNepal</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Box Icon Link for Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header & Navbar Section -->
+    <header>
+      <nav>
+        <div class="nav_logo">
+          <a href="index.html">
+            <img src="images/Bull select logo.png" alt="Bull Select" />
+            <h2>Bull Select</h2>
+          </a>
+        </div>
+
+        <input type="checkbox" id="click" />
+        <label for="click">
+          <i class="menu_btn bx bx-menu"></i>
+          <i class="close_btn bx bx-x"></i>
+        </label>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="bull-catalog.html">Bull Catalog</a></li>
+          <li><a href="ai-service-providers.html">AI Service Providers</a></li>
+          <li><a href="book.html">Bookings</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero_section">
+      <div class="section_container">
+        <div class="hero_container">
+          <div class="text_section">
+            <h2>Empower Your Herd</h2>
+            <h3>Browse Our Catalog and Connect with Expert AI Services</h3>
+            <p>
+              Discover trusted insemination providers and access a comprehensive bull catalog to enhance your breeding decisions. 
+            </p>
+
+            <div class="hero_section_button">
+              <button class="button" onclick="location.href='login.html'">Get Started</button>
+                <!-- <button class="button">Book A Table</button>-->
+            </div>
+          </div>
+
+          <div class="image_section">
+           <!-- <img src="images/cofffee_image.png" alt="Coffee" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about_us" id="about">
+      <div class="section_container">
+        <div class="about_container">
+          <div class="text_section">
+            <h2 class="section_title">About Us</h2>
+            <p>
+              Bull Select is dedicated to improving the livestock breeding process for small and large-scale farmers. Our platform provides access to a comprehensive bull catalog and reliable AI service providers, facilitating better breeding decisions.
+          </div>
+
+          <div class="image_section">
+            <img src="images/about-image.jpg" alt="bull" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="service">
+      <h2 class="section_title">Our Services</h2>
+      <div class="section_container">
+        <div class="service_container">
+          <div class="services_items">
+            <img src="images/hot_beverages.png" alt="bull-catalog" />
+            <div class="services_text">
+              <h3>Bull Catalog</h3>
+              <p>
+                Access a comprehensive bull catalog with filter options for breed and unique traits, plus suggestions for optimal breeding choices.
+              </p>
+            </div>
+          </div>
+          <div class="services_items">
+            <img src="images/cold_beverages.png" alt="Certified Services" />
+            <div class="services_text">
+              <h3>Certified Services</h3>
+              <p>
+                Find detailed profiles of AI service providers including certifications, experience, and location to ensure reliability and accountability.
+              </p>
+            </div>
+          </div>
+          <div class="services_items">
+            <img src="images/refreshment.png" alt="Rural-Focused" />
+            <div class="services_text">
+              <h3>Rural-Focused</h3>
+              <p>Tailored for Kenya’s agricultural community, our application supports multiple languages and ensures ease of use for local farmers</p>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="section_title">Contact Us</h2>
+      <div class="section_container">
+        <div class="contact_container">
+          <div class="contact_form">
+            <form action="#">
+              <div class="field">
+                <label for="Name">Full Name</label>
+                <input type="text" id="Name" placeholder="Your Name" required />
+              </div>
+              <div class="field">
+                <label for="email">Your Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="number">Your Number</label>
+                <input
+                  type="number"
+                  id="number"
+                  placeholder="Your Contact Number"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="textarea">Textarea</label>
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+
+              <button class="button" id="submit">Submit</button>
+            </form>
+          </div>
+
+          <div class="contact_text">
+            <div class="contact_items">
+              <i class="bx bx-current-location"></i>
+              <div class="contact_details">
+                <h3>Our Location</h3>
+                <p>Nairobi, Kenya</p>
+              </div>
+            </div>
+            <div class="contact_items">
+              <i class="bx bxs-envelope"></i>
+              <div class="contact_details">
+                <h3>General Enquries</h3>
+                <p>info@bullselect.com</p>
+              </div>
+            </div>
+            <div class="contact_items">
+              <i class="bx bxs-phone-call"></i>
+              <div class="contact_details">
+                <h3>Call Us</h3>
+                <p>+254 703 100 798</p>
+              </div>
+            </div>
+            <div class="contact_items">
+              <i class="bx bxs-time-five"></i>
+              <div class="contact_details">
+                <h3>Our Timing</h3>
+                <p>Mon-Sun : 10:00 AM - 7:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="section_container">
+        <div class="footer_section">
+          <div class="footer_logo">
+            <a href="index.html">
+              <img src="images/Bull select logo.png" alt="Bull Select Logo" />
+              <h2>Bull Select</h2>
+            </a>
+          </div>
+
+          <div class="useful_links">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="contact_us">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <i class="bx bx-current-location"></i>
+                <span>Nairobi, Kenya</span>
+              </li>
+              <li>
+                <i class="bx bxs-phone-call"></i> <span>+254 703 100 798</span>
+              </li>
+              <li>
+                <i class="bx bxs-time-five"></i>
+                <span>Mon-Sun : 10:00 AM - 7:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="follow_us">
+            <h3>Follow</h3>
+            <i class="bx bxl-facebook-circle"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-instagram-alt"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

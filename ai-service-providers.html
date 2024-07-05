@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Service Providers</title>
+    <link rel="stylesheet" href="ai.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Bull Select Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bull-catalog.html">Bull Catalog</a></li>
+                <li><a href="ai-service-providers.html">AI Service Providers</a></li>
+                <li><a href="book.html">Bookings</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="providers">
+            <h1>AI Service Providers</h1>
+            <div class="filters">
+                <label for="location">Filter by Location:</label>
+                <select id="location" onchange="filterProviders()">
+                    <option value="all">All</option>
+                    <!-- Add options for all 47 counties and their subcounties in Kenya -->
+                    <option value="nairobi">Nairobi</option>
+                    <option value="kiambu">Kiambu</option>
+                    <option value="nakuru">Nakuru</option>
+                    <!-- ... Add more counties and subcounties -->
+                </select>
+                <label for="rating">Filter by Rating:</label>
+                <select id="rating" onchange="filterProviders()">
+                    <option value="all">All</option>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+            </div>
+            <table class="provider-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Experience</th>
+                        <th>Location</th>
+                        <th>Service Number</th>
+                        <th>Rating</th>
+                        <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Provider rows template -->
+                    <tr class="provider-row" data-location="nairobi" data-rating="5">
+                        <td><img src="provider1.jpg" alt="Provider 1"></td>
+                        <td>Provider 1</td>
+                        <td>Certified AI Technician</td>
+                        <td>10 years</td>
+                        <td>Nairobi</td>
+                        <td>AI12345</td>
+                        <td>★★★★★</td>
+                        <td>provider1@example.com | +254 700 000001</td>
+                    </tr>
+                    <tr class="provider-row" data-location="kiambu" data-rating="4">
+                        <td><img src="provider2.jpg" alt="Provider 2"></td>
+                        <td>Provider 2</td>
+                        <td>Certified AI Technician</td>
+                        <td>8 years</td>
+                        <td>Kiambu</td>
+                        <td>AI12346</td>
+                        <td>★★★★☆</td>
+                        <td>provider2@example.com | +254 700 000002</td>
+                    </tr>
+                    <tr class="provider-row" data-location="nakuru" data-rating="5">
+                        <td><img src="provider3.jpg" alt="Provider 3"></td>
+                        <td>Provider 3</td>
+                        <td>Certified AI Technician</td>
+                        <td>12 years</td>
+                        <td>Nakuru</td>
+                        <td>AI12347</td>
+                        <td>★★★★★</td>
+                        <td>provider3@example.com | +254 700 000003</td>
+                    </tr>
+                    <tr class="provider-row" data-location="nairobi" data-rating="3">
+                        <td><img src="provider4.jpg" alt="Provider 4"></td>
+                        <td>Provider 4</td>
+                        <td>Certified AI Technician</td>
+                        <td>5 years</td>
+                        <td>Nairobi</td>
+                        <td>AI12348</td>
+                        <td>★★★☆☆</td>
+                        <td>provider4@example.com | +254 700 000004</td>
+                    </tr>
+                    <tr class="provider-row" data-location="kiambu" data-rating="4">
+                        <td><img src="provider5.jpg" alt="Provider 5"></td>
+                        <td>Provider 5</td>
+                        <td>Certified AI Technician</td>
+                        <td>7 years</td>
+                        <td>Kiambu</td>
+                        <td>AI12349</td>
+                        <td>★★★★☆</td>
+                        <td>provider5@example.com | +254 700 000005</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="ai.js"></script>
+</body>
+</html>
